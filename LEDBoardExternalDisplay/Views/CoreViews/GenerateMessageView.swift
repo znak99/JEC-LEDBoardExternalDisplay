@@ -30,13 +30,15 @@ struct GenerateMessageView: View {
                 
                 ExternalDisplayStatusInfo(status: $displayConnectionStatus)
                 
-                MessageColorPicker(color: .red)
-                
-                DisplayModeSelector()
-                
-                StartButton(action: {
-                    
-                }, status: $displayConnectionStatus)
+                if geo.size.width < geo.size.height { // Portrait
+                    PortraitOptionsAndButtonLayout(action: {
+                        
+                    }, status: $displayConnectionStatus, color: .red)
+                } else { // Landscape
+                    LandscapeOptionsAndButtonLayout(action: {
+                        
+                    }, status: $displayConnectionStatus, color: .red)
+                }
             }
             .padding(.horizontal)
         }

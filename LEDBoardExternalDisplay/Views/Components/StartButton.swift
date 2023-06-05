@@ -20,6 +20,7 @@ struct StartButton: View {
                     .font(.title3)
                     .fontWeight(.semibold)
                     .foregroundColor(.black)
+                    .minimumScaleFactor(0.5)
                 Spacer()
             }
         }

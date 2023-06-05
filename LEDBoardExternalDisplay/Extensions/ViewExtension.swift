@@ -14,7 +14,6 @@ extension View {
             .fontWeight(.black)
             .foregroundColor(color)
             .shadow(color: color, radius: radius)
-            .minimumScaleFactor(0.5)
     }
     
     func MessageOptionsStyle() -> some View {
