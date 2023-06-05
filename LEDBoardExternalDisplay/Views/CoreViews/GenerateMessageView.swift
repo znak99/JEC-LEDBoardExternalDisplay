@@ -33,6 +33,10 @@ struct GenerateMessageView: View {
                 MessageColorPicker(color: .red)
                 
                 DisplayModeSelector()
+                
+                StartButton(action: {
+                    
+                }, status: $displayConnectionStatus)
             }
             .padding(.horizontal)
         }

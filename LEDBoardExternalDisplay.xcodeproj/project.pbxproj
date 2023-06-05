@@ -22,6 +22,7 @@
 		FBFDD8442A2E5189002697B6 /* DisplayConnectionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8432A2E5189002697B6 /* DisplayConnectionStatus.swift */; };
 		FBFDD8462A2E5449002697B6 /* MessageColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8452A2E5449002697B6 /* MessageColorPicker.swift */; };
 		FBFDD8482A2E5ACD002697B6 /* DisplayModeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8472A2E5ACD002697B6 /* DisplayModeSelector.swift */; };
+		FBFDD84A2A2E6302002697B6 /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8492A2E6302002697B6 /* StartButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		FBFDD8432A2E5189002697B6 /* DisplayConnectionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayConnectionStatus.swift; sourceTree = "<group>"; };
 		FBFDD8452A2E5449002697B6 /* MessageColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageColorPicker.swift; sourceTree = "<group>"; };
 		FBFDD8472A2E5ACD002697B6 /* DisplayModeSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayModeSelector.swift; sourceTree = "<group>"; };
+		FBFDD8492A2E6302002697B6 /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				FBFDD8412A2E510A002697B6 /* ExternalDisplayStatusInfo.swift */,
 				FBFDD8452A2E5449002697B6 /* MessageColorPicker.swift */,
 				FBFDD8472A2E5ACD002697B6 /* DisplayModeSelector.swift */,
+				FBFDD8492A2E6302002697B6 /* StartButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				FBFDD8482A2E5ACD002697B6 /* DisplayModeSelector.swift in Sources */,
 				FBFDD8422A2E510A002697B6 /* ExternalDisplayStatusInfo.swift in Sources */,
 				FBFDD81E2A2E3634002697B6 /* ContentView.swift in Sources */,
+				FBFDD84A2A2E6302002697B6 /* StartButton.swift in Sources */,
 				FBFDD8402A2E4F4C002697B6 /* BlankFieldWarnning.swift in Sources */,
 				FBFDD8342A2E38D2002697B6 /* DisplayMode.swift in Sources */,
 				FBFDD8462A2E5449002697B6 /* MessageColorPicker.swift in Sources */,
