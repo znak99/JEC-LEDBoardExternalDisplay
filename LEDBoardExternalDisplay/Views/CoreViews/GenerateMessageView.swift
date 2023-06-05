@@ -9,8 +9,9 @@ import SwiftUI
 
 struct GenerateMessageView: View {
     
-    // FIXME: - Temporary variable (change to Message.text in view model)
+    // FIXME: - Temporary variables
     @State private var message: String = ""
+    @State private var messageFieldWarnning = true
     
     var body: some View {
         GeometryReader { geo in
@@ -21,6 +22,10 @@ struct GenerateMessageView: View {
                        ? geo.size.width : geo.size.height)
                 
                 MessageField(message: $message)
+                
+                if messageFieldWarnning {
+                    BlankFieldWarnning()
+                }
                 
             }
             .padding(.horizontal)
