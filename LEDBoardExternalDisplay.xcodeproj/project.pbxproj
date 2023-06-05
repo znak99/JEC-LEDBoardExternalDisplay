@@ -11,6 +11,9 @@
 		FBFDD81E2A2E3634002697B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD81D2A2E3634002697B6 /* ContentView.swift */; };
 		FBFDD8202A2E3635002697B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFDD81F2A2E3635002697B6 /* Assets.xcassets */; };
 		FBFDD8232A2E3635002697B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFDD8222A2E3635002697B6 /* Preview Assets.xcassets */; };
+		FBFDD8302A2E37E3002697B6 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD82F2A2E37E3002697B6 /* Message.swift */; };
+		FBFDD8322A2E3868002697B6 /* LEDBoardFontColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8312A2E3868002697B6 /* LEDBoardFontColor.swift */; };
+		FBFDD8342A2E38D2002697B6 /* RenderingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8332A2E38D2002697B6 /* RenderingMode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		FBFDD81D2A2E3634002697B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FBFDD81F2A2E3635002697B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBFDD8222A2E3635002697B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBFDD82F2A2E37E3002697B6 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		FBFDD8312A2E3868002697B6 /* LEDBoardFontColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDBoardFontColor.swift; sourceTree = "<group>"; };
+		FBFDD8332A2E38D2002697B6 /* RenderingMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderingMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,9 @@
 		FBFDD82B2A2E36C1002697B6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FBFDD82F2A2E37E3002697B6 /* Message.swift */,
+				FBFDD8312A2E3868002697B6 /* LEDBoardFontColor.swift */,
+				FBFDD8332A2E38D2002697B6 /* RenderingMode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -185,7 +194,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBFDD8302A2E37E3002697B6 /* Message.swift in Sources */,
+				FBFDD8322A2E3868002697B6 /* LEDBoardFontColor.swift in Sources */,
 				FBFDD81E2A2E3634002697B6 /* ContentView.swift in Sources */,
+				FBFDD8342A2E38D2002697B6 /* RenderingMode.swift in Sources */,
 				FBFDD81C2A2E3634002697B6 /* LEDBoardExternalDisplayApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
