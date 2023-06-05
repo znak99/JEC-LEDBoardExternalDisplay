@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Message {
     var text: String = ""
-    var fontColor: LEDBoardFontColor = .emerald
+    var fontColor: Color = .white
     var renderingMode: DisplayMode = .none
 }

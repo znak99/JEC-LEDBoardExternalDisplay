@@ -16,4 +16,12 @@ extension View {
             .shadow(color: color, radius: radius)
             .minimumScaleFactor(0.5)
     }
+    
+    func MessageOptionsStyle() -> some View {
+        self
+            .padding(.horizontal)
+            .font(.title3)
+            .foregroundColor(.white)
+            .padding([.top, .horizontal])
+    }
 }
