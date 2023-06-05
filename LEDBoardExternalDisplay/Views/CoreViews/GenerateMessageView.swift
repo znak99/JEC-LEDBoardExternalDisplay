@@ -12,6 +12,7 @@ struct GenerateMessageView: View {
     // FIXME: - Temporary variables
     @State private var message: String = ""
     @State private var messageFieldWarnning = true
+    @State private var displayConnectionStatus = true
     
     var body: some View {
         GeometryReader { geo in
@@ -27,6 +28,7 @@ struct GenerateMessageView: View {
                     BlankFieldWarnning()
                 }
                 
+                ExternalDisplayStatusInfo(status: $displayConnectionStatus)
             }
             .padding(.horizontal)
         }
