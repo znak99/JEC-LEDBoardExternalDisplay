@@ -14,6 +14,7 @@
 		FBFDD8302A2E37E3002697B6 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD82F2A2E37E3002697B6 /* Message.swift */; };
 		FBFDD8322A2E3868002697B6 /* LEDBoardFontColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8312A2E3868002697B6 /* LEDBoardFontColor.swift */; };
 		FBFDD8342A2E38D2002697B6 /* RenderingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8332A2E38D2002697B6 /* RenderingMode.swift */; };
+		FBFDD8362A2E3977002697B6 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8352A2E3977002697B6 /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		FBFDD82F2A2E37E3002697B6 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		FBFDD8312A2E3868002697B6 /* LEDBoardFontColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDBoardFontColor.swift; sourceTree = "<group>"; };
 		FBFDD8332A2E38D2002697B6 /* RenderingMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderingMode.swift; sourceTree = "<group>"; };
+		FBFDD8352A2E3977002697B6 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		FBFDD82C2A2E36C9002697B6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FBFDD8352A2E3977002697B6 /* ColorExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				FBFDD8302A2E37E3002697B6 /* Message.swift in Sources */,
 				FBFDD8322A2E3868002697B6 /* LEDBoardFontColor.swift in Sources */,
 				FBFDD81E2A2E3634002697B6 /* ContentView.swift in Sources */,
+				FBFDD8362A2E3977002697B6 /* ColorExtension.swift in Sources */,
 				FBFDD8342A2E38D2002697B6 /* RenderingMode.swift in Sources */,
 				FBFDD81C2A2E3634002697B6 /* LEDBoardExternalDisplayApp.swift in Sources */,
 			);
