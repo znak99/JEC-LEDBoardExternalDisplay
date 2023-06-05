@@ -20,6 +20,8 @@
 		FBFDD83C2A2E4827002697B6 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD83B2A2E4827002697B6 /* Header.swift */; };
 		FBFDD83E2A2E4D4B002697B6 /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD83D2A2E4D4B002697B6 /* MessageField.swift */; };
 		FBFDD8402A2E4F4C002697B6 /* BlankFieldWarnning.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD83F2A2E4F4C002697B6 /* BlankFieldWarnning.swift */; };
+		FBFDD8422A2E510A002697B6 /* ExternalDisplayStatusInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8412A2E510A002697B6 /* ExternalDisplayStatusInfo.swift */; };
+		FBFDD8442A2E5189002697B6 /* DisplayConnectionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8432A2E5189002697B6 /* DisplayConnectionStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		FBFDD83B2A2E4827002697B6 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		FBFDD83D2A2E4D4B002697B6 /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
 		FBFDD83F2A2E4F4C002697B6 /* BlankFieldWarnning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankFieldWarnning.swift; sourceTree = "<group>"; };
+		FBFDD8412A2E510A002697B6 /* ExternalDisplayStatusInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalDisplayStatusInfo.swift; sourceTree = "<group>"; };
+		FBFDD8432A2E5189002697B6 /* DisplayConnectionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayConnectionStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 				FBFDD82F2A2E37E3002697B6 /* Message.swift */,
 				FBFDD8312A2E3868002697B6 /* LEDBoardFontColor.swift */,
 				FBFDD8332A2E38D2002697B6 /* DisplayMode.swift */,
+				FBFDD8432A2E5189002697B6 /* DisplayConnectionStatus.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 				FBFDD83B2A2E4827002697B6 /* Header.swift */,
 				FBFDD83D2A2E4D4B002697B6 /* MessageField.swift */,
 				FBFDD83F2A2E4F4C002697B6 /* BlankFieldWarnning.swift */,
+				FBFDD8412A2E510A002697B6 /* ExternalDisplayStatusInfo.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -215,11 +221,13 @@
 				FBFDD8302A2E37E3002697B6 /* Message.swift in Sources */,
 				FBFDD83C2A2E4827002697B6 /* Header.swift in Sources */,
 				FBFDD83E2A2E4D4B002697B6 /* MessageField.swift in Sources */,
+				FBFDD8422A2E510A002697B6 /* ExternalDisplayStatusInfo.swift in Sources */,
 				FBFDD8322A2E3868002697B6 /* LEDBoardFontColor.swift in Sources */,
 				FBFDD81E2A2E3634002697B6 /* ContentView.swift in Sources */,
 				FBFDD8402A2E4F4C002697B6 /* BlankFieldWarnning.swift in Sources */,
 				FBFDD8362A2E3977002697B6 /* ColorExtension.swift in Sources */,
 				FBFDD8342A2E38D2002697B6 /* DisplayMode.swift in Sources */,
+				FBFDD8442A2E5189002697B6 /* DisplayConnectionStatus.swift in Sources */,
 				FBFDD8382A2E4329002697B6 /* GenerateMessageView.swift in Sources */,
 				FBFDD83A2A2E4675002697B6 /* ViewExtension.swift in Sources */,
 				FBFDD81C2A2E3634002697B6 /* LEDBoardExternalDisplayApp.swift in Sources */,
