@@ -9,6 +9,6 @@ import Foundation
 
 struct Message {
     var text: String = ""
-    var fontColor: LEDBoardFontColor
-    var renderingMode: RenderingMode
+    var fontColor: LEDBoardFontColor = .emerald
+    var renderingMode: DisplayMode = .none
 }

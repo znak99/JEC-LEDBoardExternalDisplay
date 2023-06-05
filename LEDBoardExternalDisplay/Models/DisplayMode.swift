@@ -7,6 +7,8 @@
 
 import Foundation
 
-enum RenderingMode {
-    
+enum DisplayMode {
+    case flicker
+    // FIXME: - rename for default mode
+    case none
 }
