@@ -31,6 +31,8 @@ struct GenerateMessageView: View {
                 ExternalDisplayStatusInfo(status: $displayConnectionStatus)
                 
                 MessageColorPicker(color: .red)
+                
+                DisplayModeSelector()
             }
             .padding(.horizontal)
         }

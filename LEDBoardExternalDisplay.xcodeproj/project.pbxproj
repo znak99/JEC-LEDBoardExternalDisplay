@@ -21,6 +21,7 @@
 		FBFDD8422A2E510A002697B6 /* ExternalDisplayStatusInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8412A2E510A002697B6 /* ExternalDisplayStatusInfo.swift */; };
 		FBFDD8442A2E5189002697B6 /* DisplayConnectionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8432A2E5189002697B6 /* DisplayConnectionStatus.swift */; };
 		FBFDD8462A2E5449002697B6 /* MessageColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8452A2E5449002697B6 /* MessageColorPicker.swift */; };
+		FBFDD8482A2E5ACD002697B6 /* DisplayModeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8472A2E5ACD002697B6 /* DisplayModeSelector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		FBFDD8412A2E510A002697B6 /* ExternalDisplayStatusInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalDisplayStatusInfo.swift; sourceTree = "<group>"; };
 		FBFDD8432A2E5189002697B6 /* DisplayConnectionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayConnectionStatus.swift; sourceTree = "<group>"; };
 		FBFDD8452A2E5449002697B6 /* MessageColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageColorPicker.swift; sourceTree = "<group>"; };
+		FBFDD8472A2E5ACD002697B6 /* DisplayModeSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayModeSelector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				FBFDD83F2A2E4F4C002697B6 /* BlankFieldWarnning.swift */,
 				FBFDD8412A2E510A002697B6 /* ExternalDisplayStatusInfo.swift */,
 				FBFDD8452A2E5449002697B6 /* MessageColorPicker.swift */,
+				FBFDD8472A2E5ACD002697B6 /* DisplayModeSelector.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				FBFDD8302A2E37E3002697B6 /* Message.swift in Sources */,
 				FBFDD83C2A2E4827002697B6 /* Header.swift in Sources */,
 				FBFDD83E2A2E4D4B002697B6 /* MessageField.swift in Sources */,
+				FBFDD8482A2E5ACD002697B6 /* DisplayModeSelector.swift in Sources */,
 				FBFDD8422A2E510A002697B6 /* ExternalDisplayStatusInfo.swift in Sources */,
 				FBFDD81E2A2E3634002697B6 /* ContentView.swift in Sources */,
 				FBFDD8402A2E4F4C002697B6 /* BlankFieldWarnning.swift in Sources */,
