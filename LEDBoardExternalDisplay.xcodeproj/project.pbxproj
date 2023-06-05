@@ -18,6 +18,7 @@
 		FBFDD8382A2E4329002697B6 /* GenerateMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8372A2E4329002697B6 /* GenerateMessageView.swift */; };
 		FBFDD83A2A2E4675002697B6 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8392A2E4675002697B6 /* ViewExtension.swift */; };
 		FBFDD83C2A2E4827002697B6 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD83B2A2E4827002697B6 /* Header.swift */; };
+		FBFDD83E2A2E4D4B002697B6 /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD83D2A2E4D4B002697B6 /* MessageField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		FBFDD8372A2E4329002697B6 /* GenerateMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateMessageView.swift; sourceTree = "<group>"; };
 		FBFDD8392A2E4675002697B6 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		FBFDD83B2A2E4827002697B6 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		FBFDD83D2A2E4D4B002697B6 /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				FBFDD83B2A2E4827002697B6 /* Header.swift */,
+				FBFDD83D2A2E4D4B002697B6 /* MessageField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			files = (
 				FBFDD8302A2E37E3002697B6 /* Message.swift in Sources */,
 				FBFDD83C2A2E4827002697B6 /* Header.swift in Sources */,
+				FBFDD83E2A2E4D4B002697B6 /* MessageField.swift in Sources */,
 				FBFDD8322A2E3868002697B6 /* LEDBoardFontColor.swift in Sources */,
 				FBFDD81E2A2E3634002697B6 /* ContentView.swift in Sources */,
 				FBFDD8362A2E3977002697B6 /* ColorExtension.swift in Sources */,
