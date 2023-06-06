@@ -10,15 +10,19 @@ import SwiftUI
 struct MessageColorPicker: View {
     
     @State var color: Color
+    @Binding var isShowColorPickerView: Bool
     
     var body: some View {
         ColorPicker("Select font color", selection: $color)
             .MessageOptionsStyle()
+            .onTapGesture {
+                isShowColorPickerView = true
+            }
     }
 }
 
 struct MessageColorPicker_Previews: PreviewProvider {
     static var previews: some View {
-        MessageColorPicker(color: .red)
+        MessageColorPicker(color: .red, isShowColorPickerView: .constant(false))
     }
 }

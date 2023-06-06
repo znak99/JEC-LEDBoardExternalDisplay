@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FBF869E52A2F7D05008CBDE3 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF869E42A2F7D05008CBDE3 /* ColorPickerView.swift */; };
 		FBFDD81C2A2E3634002697B6 /* LEDBoardExternalDisplayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD81B2A2E3634002697B6 /* LEDBoardExternalDisplayApp.swift */; };
 		FBFDD81E2A2E3634002697B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD81D2A2E3634002697B6 /* ContentView.swift */; };
 		FBFDD8202A2E3635002697B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFDD81F2A2E3635002697B6 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FBF869E42A2F7D05008CBDE3 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		FBFDD8182A2E3634002697B6 /* LEDBoardExternalDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LEDBoardExternalDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFDD81B2A2E3634002697B6 /* LEDBoardExternalDisplayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDBoardExternalDisplayApp.swift; sourceTree = "<group>"; };
 		FBFDD81D2A2E3634002697B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				FBFDD8372A2E4329002697B6 /* GenerateMessageView.swift */,
+				FBF869E42A2F7D05008CBDE3 /* ColorPickerView.swift */,
 			);
 			path = CoreViews;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				FBFDD8302A2E37E3002697B6 /* Message.swift in Sources */,
 				FBFDD84C2A2E655F002697B6 /* LandscapeOptionsAndButtonLayout.swift in Sources */,
 				FBFDD83C2A2E4827002697B6 /* Header.swift in Sources */,
+				FBF869E52A2F7D05008CBDE3 /* ColorPickerView.swift in Sources */,
 				FBFDD83E2A2E4D4B002697B6 /* MessageField.swift in Sources */,
 				FBFDD8482A2E5ACD002697B6 /* DisplayModeSelector.swift in Sources */,
 				FBFDD8422A2E510A002697B6 /* ExternalDisplayStatusInfo.swift in Sources */,
