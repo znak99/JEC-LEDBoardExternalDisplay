@@ -12,7 +12,7 @@ struct BlankFieldWarnning: View {
         HStack {
             Text("* Message field can not be black")
                 .foregroundColor(.pink)
-                .font(.subheadline)
+                .font(.footnote)
             Spacer()
         }
     }
