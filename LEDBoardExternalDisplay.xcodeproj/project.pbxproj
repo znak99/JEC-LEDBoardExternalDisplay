@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F74BDFC2A30131600C027F0 /* ExternalLEDBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74BDFB2A30131600C027F0 /* ExternalLEDBoardView.swift */; };
+		7F74BDFE2A3013BA00C027F0 /* ExternalDisplayContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74BDFD2A3013BA00C027F0 /* ExternalDisplayContent.swift */; };
 		FBF869E52A2F7D05008CBDE3 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF869E42A2F7D05008CBDE3 /* ColorPickerView.swift */; };
 		FBFDAB3D2A2F985900DC8CA7 /* ColorPickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDAB3C2A2F985900DC8CA7 /* ColorPickerManager.swift */; };
 		FBFDD81C2A2E3634002697B6 /* LEDBoardExternalDisplayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD81B2A2E3634002697B6 /* LEDBoardExternalDisplayApp.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F74BDFB2A30131600C027F0 /* ExternalLEDBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalLEDBoardView.swift; sourceTree = "<group>"; };
+		7F74BDFD2A3013BA00C027F0 /* ExternalDisplayContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalDisplayContent.swift; sourceTree = "<group>"; };
 		FBF869E42A2F7D05008CBDE3 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		FBFDAB3C2A2F985900DC8CA7 /* ColorPickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerManager.swift; sourceTree = "<group>"; };
 		FBFDD8182A2E3634002697B6 /* LEDBoardExternalDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LEDBoardExternalDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +95,6 @@
 				FBFDD8432A2E5189002697B6 /* DisplayConnectionStatus.swift */,
 				FBFDD82A2A2E36B7002697B6 /* Views */,
 				FBFDD8292A2E36A3002697B6 /* ViewModels */,
-				FBFDAB3C2A2F985900DC8CA7 /* ColorPickerManager.swift */,
 				FBFDD82C2A2E36C9002697B6 /* Extensions */,
 				FBFDD81F2A2E3635002697B6 /* Assets.xcassets */,
 				FBFDD8212A2E3635002697B6 /* Preview Content */,
@@ -110,6 +113,8 @@
 		FBFDD8292A2E36A3002697B6 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				FBFDAB3C2A2F985900DC8CA7 /* ColorPickerManager.swift */,
+				7F74BDFD2A3013BA00C027F0 /* ExternalDisplayContent.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			children = (
 				FBFDD8372A2E4329002697B6 /* GenerateMessageView.swift */,
 				FBF869E42A2F7D05008CBDE3 /* ColorPickerView.swift */,
+				7F74BDFB2A30131600C027F0 /* ExternalLEDBoardView.swift */,
 				FBFDD82D2A2E36DF002697B6 /* Components */,
 			);
 			path = Views;
@@ -229,12 +235,14 @@
 				FBFDD84C2A2E655F002697B6 /* LandscapeOptionsAndButtonLayout.swift in Sources */,
 				FBFDD83C2A2E4827002697B6 /* Header.swift in Sources */,
 				FBF869E52A2F7D05008CBDE3 /* ColorPickerView.swift in Sources */,
+				7F74BDFC2A30131600C027F0 /* ExternalLEDBoardView.swift in Sources */,
 				FBFDD83E2A2E4D4B002697B6 /* MessageField.swift in Sources */,
 				FBFDD8482A2E5ACD002697B6 /* DisplayModeSelector.swift in Sources */,
 				FBFDD8422A2E510A002697B6 /* ExternalDisplayStatusInfo.swift in Sources */,
 				FBFDAB3D2A2F985900DC8CA7 /* ColorPickerManager.swift in Sources */,
 				FBFDD81E2A2E3634002697B6 /* ContentView.swift in Sources */,
 				FBFDD84A2A2E6302002697B6 /* StartButton.swift in Sources */,
+				7F74BDFE2A3013BA00C027F0 /* ExternalDisplayContent.swift in Sources */,
 				FBFDD8402A2E4F4C002697B6 /* BlankFieldWarnning.swift in Sources */,
 				FBFDD8342A2E38D2002697B6 /* DisplayMode.swift in Sources */,
 				FBFDD8462A2E5449002697B6 /* MessageColorPicker.swift in Sources */,

@@ -58,18 +58,6 @@ struct ColorPickerView: View {
                         Spacer()
                     }
                     
-//                    ZStack {
-//                        RoundedRectangle(cornerRadius: 12)
-//                            .frame(width: geo.size.width / 1.5, height: geo.size.height / 15)
-//                            .foregroundColor(Color.init(red: red / 255, green: green / 255, blue: blue / 255, opacity: alpha))
-//                            .shadow(color: Color.init(red: red / 255, green: green / 255, blue: blue / 255, opacity: alpha), radius: 12)
-//                        Text("Current color")
-//                            .foregroundColor(red + green + blue < 320 ? .white : alpha < 0.6 ? .white : .black)
-//                            .font(.headline)
-//                            .fontWeight(.black)
-//                    }
-//                    .padding()
-                    
                     Text("Sample text")
                         .font(.largeTitle)
                         .foregroundColor(Color.init(red: red / 255, green: green / 255, blue: blue / 255, opacity: alpha))
