@@ -6,7 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
 
 class ColorPickerManager: ObservableObject {
+    @Published var currentColor: Color = .white
     
+    func selectRecommendColor(color: RecommendColor) {
+        currentColor = color.color
+    }
 }
