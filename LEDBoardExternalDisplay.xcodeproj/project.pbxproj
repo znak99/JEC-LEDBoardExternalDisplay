@@ -85,10 +85,14 @@
 			children = (
 				FBFDD81B2A2E3634002697B6 /* LEDBoardExternalDisplayApp.swift */,
 				FBFDD81D2A2E3634002697B6 /* ContentView.swift */,
-				FBFDD82C2A2E36C9002697B6 /* Extensions */,
 				FBFDD82B2A2E36C1002697B6 /* Models */,
+				FBFDD82F2A2E37E3002697B6 /* Message.swift */,
+				FBFDD8332A2E38D2002697B6 /* DisplayMode.swift */,
+				FBFDD8432A2E5189002697B6 /* DisplayConnectionStatus.swift */,
 				FBFDD82A2A2E36B7002697B6 /* Views */,
 				FBFDD8292A2E36A3002697B6 /* ViewModels */,
+				FBFDAB3C2A2F985900DC8CA7 /* ColorPickerManager.swift */,
+				FBFDD82C2A2E36C9002697B6 /* Extensions */,
 				FBFDD81F2A2E3635002697B6 /* Assets.xcassets */,
 				FBFDD8212A2E3635002697B6 /* Preview Content */,
 			);
@@ -106,7 +110,6 @@
 		FBFDD8292A2E36A3002697B6 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				FBFDAB3C2A2F985900DC8CA7 /* ColorPickerManager.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -124,9 +127,6 @@
 		FBFDD82B2A2E36C1002697B6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FBFDD82F2A2E37E3002697B6 /* Message.swift */,
-				FBFDD8332A2E38D2002697B6 /* DisplayMode.swift */,
-				FBFDD8432A2E5189002697B6 /* DisplayConnectionStatus.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -379,6 +379,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -408,6 +409,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
