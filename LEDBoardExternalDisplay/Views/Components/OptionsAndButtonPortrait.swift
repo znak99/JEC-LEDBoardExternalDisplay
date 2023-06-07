@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PortraitOptionsAndButtonLayout: View {
+struct OptionsAndButtonPortrait: View {
     
     var action: () -> ()
     @Binding var status: Bool
@@ -23,8 +23,8 @@ struct PortraitOptionsAndButtonLayout: View {
     }
 }
 
-struct PortraitOptionsAndButtonLayout_Previews: PreviewProvider {
+struct OptionsAndButtonPortrait_Previews: PreviewProvider {
     static var previews: some View {
-        PortraitOptionsAndButtonLayout(action: { print("Button") }, status: .constant(true), color: .red, isShowColorPickerView: .constant(false))
+        OptionsAndButtonPortrait(action: { print("Button") }, status: .constant(true), color: .red, isShowColorPickerView: .constant(false))
     }
 }

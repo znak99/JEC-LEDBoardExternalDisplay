@@ -22,7 +22,7 @@ struct GenerateMessageView: View {
                 VStack {
 
                     // Use the shorter side of the screen for font size
-                    Header(fontSize: geo.size.width < geo.size.height
+                    MainHeader(fontSize: geo.size.width < geo.size.height
                            ? geo.size.width : geo.size.height)
                     
                     MessageField(message: $message)
@@ -34,11 +34,11 @@ struct GenerateMessageView: View {
                     ExternalDisplayStatusInfo(status: $displayConnectionStatus)
                     
                     if geo.size.width < geo.size.height { // Portrait
-                        PortraitOptionsAndButtonLayout(action: {
+                        OptionsAndButtonPortrait(action: {
                             
                         }, status: $displayConnectionStatus, color: .red, isShowColorPickerView: $showColorPickerView)
                     } else { // Landscape
-                        LandscapeOptionsAndButtonLayout(action: {
+                        OptionsAndButtonLandscape(action: {
                             
                         }, status: $displayConnectionStatus, color: .red, isShowColorPickerView: $showColorPickerView)
                     }

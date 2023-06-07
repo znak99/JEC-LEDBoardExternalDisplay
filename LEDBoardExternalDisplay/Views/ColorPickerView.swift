@@ -9,59 +9,32 @@ import SwiftUI
 
 struct ColorPickerView: View {
     
-    let rainbowGradient = Gradient(colors: [.red, .orange, .yellow, .green, .blue, .purple])
-    let shadowRadius: CGFloat = 4
     @State var color: Color = .white
     
     @State private var red: Double = 14
     @State private var green: Double = 200
     @State private var blue: Double = 100
     @State private var alpha: Double = 0.5
+    
+    @ObservedObject var colorPickerManager = ColorPickerManager()
+    
     var body: some View {
         GeometryReader { geo in
             if geo.size.width < geo.size.height {
                 VStack {
-                    HStack {
-                        Spacer()
-                        VStack {
-                            HStack(spacing: 0) {
-                                Text("C")
-                                    .HeaderFontStyle(fontColor: .red, shadowRadius: shadowRadius)
-                                Text("o")
-                                    .HeaderFontStyle(fontColor: .orange, shadowRadius: shadowRadius)
-                                Text("l")
-                                    .HeaderFontStyle(fontColor: .yellow, shadowRadius: shadowRadius)
-                                Text("o")
-                                    .HeaderFontStyle(fontColor: .green, shadowRadius: shadowRadius)
-                                Text("r")
-                                    .HeaderFontStyle(fontColor: .blue, shadowRadius: shadowRadius)
-                            }
-                            .offset(x: -(geo.size.width / 7))
-                                
-                            HStack(spacing: 0) {
-                                Text("P")
-                                    .HeaderFontStyle(fontColor: .blue, shadowRadius: shadowRadius)
-                                Text("i")
-                                    .HeaderFontStyle(fontColor: .purple, shadowRadius: shadowRadius)
-                                Text("c")
-                                    .HeaderFontStyle(fontColor: .red, shadowRadius: shadowRadius)
-                                Text("k")
-                                    .HeaderFontStyle(fontColor: .orange, shadowRadius: shadowRadius)
-                                Text("e")
-                                    .HeaderFontStyle(fontColor: .yellow, shadowRadius: shadowRadius)
-                                Text("r")
-                                    .HeaderFontStyle(fontColor: .green, shadowRadius: shadowRadius)
-                            }
-                            .offset(x: geo.size.width / 7)
-                        }
-                        .font(.system(size: geo.size.width / 9))
-                        Spacer()
-                    }
+                    ColorPickerHeaderPortrait(geoWidth: geo.size.width)
                     
                     Text("Sample text")
                         .font(.largeTitle)
-                        .foregroundColor(Color.init(red: red / 255, green: green / 255, blue: blue / 255, opacity: alpha))
-                        .shadow(color: Color.init(red: red / 255, green: green / 255, blue: blue / 255, opacity: alpha), radius: 12)
+                        .foregroundColor(
+                            Color.init(red: colorPickerManager.red / 255,
+                                       green: colorPickerManager.green / 255,
+                                       blue: colorPickerManager.blue / 255,
+                                       opacity: colorPickerManager.alpha))
+                        .shadow(color: .init(red: colorPickerManager.red / 255,
+                                             green: colorPickerManager.green / 255,
+                                             blue: colorPickerManager.blue / 255,
+                                             opacity: colorPickerManager.alpha), radius: 12)
                         .fontWeight(.bold)
                         .padding()
                     
@@ -222,7 +195,7 @@ struct ColorPickerView: View {
                 }
                 .padding()
             } else {
-                
+                ColorPickerHeaderLandscape(geoWidth: geo.size.width)
             }
         }
     }

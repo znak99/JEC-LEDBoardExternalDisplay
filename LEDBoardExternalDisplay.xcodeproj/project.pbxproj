@@ -10,6 +10,8 @@
 		7F74BDFC2A30131600C027F0 /* ExternalLEDBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74BDFB2A30131600C027F0 /* ExternalLEDBoardView.swift */; };
 		7F74BDFE2A3013BA00C027F0 /* ExternalDisplayContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74BDFD2A3013BA00C027F0 /* ExternalDisplayContent.swift */; };
 		7F74BE022A30184600C027F0 /* RecommendColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74BE012A30184600C027F0 /* RecommendColor.swift */; };
+		7F74BE062A302CB300C027F0 /* ColorPickerHeaderPortrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74BE052A302CB300C027F0 /* ColorPickerHeaderPortrait.swift */; };
+		7F74BE0A2A302E1000C027F0 /* ColorPickerHeaderLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74BE092A302E1000C027F0 /* ColorPickerHeaderLandscape.swift */; };
 		FBF869E52A2F7D05008CBDE3 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF869E42A2F7D05008CBDE3 /* ColorPickerView.swift */; };
 		FBFDAB3D2A2F985900DC8CA7 /* ColorPickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDAB3C2A2F985900DC8CA7 /* ColorPickerManager.swift */; };
 		FBFDD81C2A2E3634002697B6 /* LEDBoardExternalDisplayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD81B2A2E3634002697B6 /* LEDBoardExternalDisplayApp.swift */; };
@@ -20,7 +22,7 @@
 		FBFDD8342A2E38D2002697B6 /* DisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8332A2E38D2002697B6 /* DisplayMode.swift */; };
 		FBFDD8382A2E4329002697B6 /* GenerateMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8372A2E4329002697B6 /* GenerateMessageView.swift */; };
 		FBFDD83A2A2E4675002697B6 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8392A2E4675002697B6 /* ViewExtension.swift */; };
-		FBFDD83C2A2E4827002697B6 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD83B2A2E4827002697B6 /* Header.swift */; };
+		FBFDD83C2A2E4827002697B6 /* MainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD83B2A2E4827002697B6 /* MainHeader.swift */; };
 		FBFDD83E2A2E4D4B002697B6 /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD83D2A2E4D4B002697B6 /* MessageField.swift */; };
 		FBFDD8402A2E4F4C002697B6 /* BlankFieldWarnning.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD83F2A2E4F4C002697B6 /* BlankFieldWarnning.swift */; };
 		FBFDD8422A2E510A002697B6 /* ExternalDisplayStatusInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8412A2E510A002697B6 /* ExternalDisplayStatusInfo.swift */; };
@@ -28,14 +30,16 @@
 		FBFDD8462A2E5449002697B6 /* MessageColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8452A2E5449002697B6 /* MessageColorPicker.swift */; };
 		FBFDD8482A2E5ACD002697B6 /* DisplayModeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8472A2E5ACD002697B6 /* DisplayModeSelector.swift */; };
 		FBFDD84A2A2E6302002697B6 /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8492A2E6302002697B6 /* StartButton.swift */; };
-		FBFDD84C2A2E655F002697B6 /* LandscapeOptionsAndButtonLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD84B2A2E655F002697B6 /* LandscapeOptionsAndButtonLayout.swift */; };
-		FBFDD84E2A2E66AC002697B6 /* PortraitOptionsAndButtonLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD84D2A2E66AC002697B6 /* PortraitOptionsAndButtonLayout.swift */; };
+		FBFDD84C2A2E655F002697B6 /* OptionsAndButtonLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD84B2A2E655F002697B6 /* OptionsAndButtonLandscape.swift */; };
+		FBFDD84E2A2E66AC002697B6 /* OptionsAndButtonPortrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD84D2A2E66AC002697B6 /* OptionsAndButtonPortrait.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F74BDFB2A30131600C027F0 /* ExternalLEDBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalLEDBoardView.swift; sourceTree = "<group>"; };
 		7F74BDFD2A3013BA00C027F0 /* ExternalDisplayContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalDisplayContent.swift; sourceTree = "<group>"; };
 		7F74BE012A30184600C027F0 /* RecommendColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendColor.swift; sourceTree = "<group>"; };
+		7F74BE052A302CB300C027F0 /* ColorPickerHeaderPortrait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerHeaderPortrait.swift; sourceTree = "<group>"; };
+		7F74BE092A302E1000C027F0 /* ColorPickerHeaderLandscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerHeaderLandscape.swift; sourceTree = "<group>"; };
 		FBF869E42A2F7D05008CBDE3 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		FBFDAB3C2A2F985900DC8CA7 /* ColorPickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerManager.swift; sourceTree = "<group>"; };
 		FBFDD8182A2E3634002697B6 /* LEDBoardExternalDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LEDBoardExternalDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,7 +51,7 @@
 		FBFDD8332A2E38D2002697B6 /* DisplayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayMode.swift; sourceTree = "<group>"; };
 		FBFDD8372A2E4329002697B6 /* GenerateMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateMessageView.swift; sourceTree = "<group>"; };
 		FBFDD8392A2E4675002697B6 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
-		FBFDD83B2A2E4827002697B6 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		FBFDD83B2A2E4827002697B6 /* MainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeader.swift; sourceTree = "<group>"; };
 		FBFDD83D2A2E4D4B002697B6 /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
 		FBFDD83F2A2E4F4C002697B6 /* BlankFieldWarnning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankFieldWarnning.swift; sourceTree = "<group>"; };
 		FBFDD8412A2E510A002697B6 /* ExternalDisplayStatusInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalDisplayStatusInfo.swift; sourceTree = "<group>"; };
@@ -55,8 +59,8 @@
 		FBFDD8452A2E5449002697B6 /* MessageColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageColorPicker.swift; sourceTree = "<group>"; };
 		FBFDD8472A2E5ACD002697B6 /* DisplayModeSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayModeSelector.swift; sourceTree = "<group>"; };
 		FBFDD8492A2E6302002697B6 /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
-		FBFDD84B2A2E655F002697B6 /* LandscapeOptionsAndButtonLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeOptionsAndButtonLayout.swift; sourceTree = "<group>"; };
-		FBFDD84D2A2E66AC002697B6 /* PortraitOptionsAndButtonLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitOptionsAndButtonLayout.swift; sourceTree = "<group>"; };
+		FBFDD84B2A2E655F002697B6 /* OptionsAndButtonLandscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsAndButtonLandscape.swift; sourceTree = "<group>"; };
+		FBFDD84D2A2E66AC002697B6 /* OptionsAndButtonPortrait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsAndButtonPortrait.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F74BE072A302D6600C027F0 /* ColorPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				7F74BE052A302CB300C027F0 /* ColorPickerHeaderPortrait.swift */,
+				7F74BE092A302E1000C027F0 /* ColorPickerHeaderLandscape.swift */,
+			);
+			path = ColorPickerView;
+			sourceTree = "<group>";
+		};
+		7F74BE082A302D7000C027F0 /* GenerateMessageView */ = {
+			isa = PBXGroup;
+			children = (
+				FBFDD83B2A2E4827002697B6 /* MainHeader.swift */,
+				FBFDD83D2A2E4D4B002697B6 /* MessageField.swift */,
+			);
+			path = GenerateMessageView;
+			sourceTree = "<group>";
+		};
 		FBFDD80F2A2E3634002697B6 = {
 			isa = PBXGroup;
 			children = (
@@ -151,15 +173,15 @@
 		FBFDD82D2A2E36DF002697B6 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				FBFDD83B2A2E4827002697B6 /* Header.swift */,
-				FBFDD83D2A2E4D4B002697B6 /* MessageField.swift */,
+				7F74BE082A302D7000C027F0 /* GenerateMessageView */,
+				7F74BE072A302D6600C027F0 /* ColorPickerView */,
 				FBFDD83F2A2E4F4C002697B6 /* BlankFieldWarnning.swift */,
 				FBFDD8412A2E510A002697B6 /* ExternalDisplayStatusInfo.swift */,
 				FBFDD8452A2E5449002697B6 /* MessageColorPicker.swift */,
 				FBFDD8472A2E5ACD002697B6 /* DisplayModeSelector.swift */,
 				FBFDD8492A2E6302002697B6 /* StartButton.swift */,
-				FBFDD84B2A2E655F002697B6 /* LandscapeOptionsAndButtonLayout.swift */,
-				FBFDD84D2A2E66AC002697B6 /* PortraitOptionsAndButtonLayout.swift */,
+				FBFDD84B2A2E655F002697B6 /* OptionsAndButtonLandscape.swift */,
+				FBFDD84D2A2E66AC002697B6 /* OptionsAndButtonPortrait.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -234,9 +256,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F74BE062A302CB300C027F0 /* ColorPickerHeaderPortrait.swift in Sources */,
 				FBFDD8302A2E37E3002697B6 /* Message.swift in Sources */,
-				FBFDD84C2A2E655F002697B6 /* LandscapeOptionsAndButtonLayout.swift in Sources */,
-				FBFDD83C2A2E4827002697B6 /* Header.swift in Sources */,
+				7F74BE0A2A302E1000C027F0 /* ColorPickerHeaderLandscape.swift in Sources */,
+				FBFDD84C2A2E655F002697B6 /* OptionsAndButtonLandscape.swift in Sources */,
+				FBFDD83C2A2E4827002697B6 /* MainHeader.swift in Sources */,
 				FBF869E52A2F7D05008CBDE3 /* ColorPickerView.swift in Sources */,
 				7F74BDFC2A30131600C027F0 /* ExternalLEDBoardView.swift in Sources */,
 				7F74BE022A30184600C027F0 /* RecommendColor.swift in Sources */,
@@ -252,7 +276,7 @@
 				FBFDD8462A2E5449002697B6 /* MessageColorPicker.swift in Sources */,
 				FBFDD8442A2E5189002697B6 /* DisplayConnectionStatus.swift in Sources */,
 				FBFDD8382A2E4329002697B6 /* GenerateMessageView.swift in Sources */,
-				FBFDD84E2A2E66AC002697B6 /* PortraitOptionsAndButtonLayout.swift in Sources */,
+				FBFDD84E2A2E66AC002697B6 /* OptionsAndButtonPortrait.swift in Sources */,
 				FBFDD83A2A2E4675002697B6 /* ViewExtension.swift in Sources */,
 				FBFDD81C2A2E3634002697B6 /* LEDBoardExternalDisplayApp.swift in Sources */,
 			);

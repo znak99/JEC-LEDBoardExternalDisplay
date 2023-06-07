@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LandscapeOptionsAndButtonLayout: View {
+struct OptionsAndButtonLandscape: View {
     
     var action: () -> ()
     @Binding var status: Bool
@@ -25,8 +25,8 @@ struct LandscapeOptionsAndButtonLayout: View {
     }
 }
 
-struct LandscapeOptionsAndButtonLayout_Previews: PreviewProvider {
+struct OptionsAndButtonLandscape_Previews: PreviewProvider {
     static var previews: some View {
-        LandscapeOptionsAndButtonLayout(action: { print("Button") }, status: .constant(true), color: .red, isShowColorPickerView: .constant(false))
+        OptionsAndButtonLandscape(action: { print("Button") }, status: .constant(true), color: .red, isShowColorPickerView: .constant(false))
     }
 }

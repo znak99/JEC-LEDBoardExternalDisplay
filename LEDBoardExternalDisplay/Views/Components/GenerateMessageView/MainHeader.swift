@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Header: View {
+struct MainHeader: View {
     
     @State var fontSize: CGFloat
     
@@ -29,8 +29,8 @@ struct Header: View {
     }
 }
 
-struct Header_Previews: PreviewProvider {
+struct MainHeader_Previews: PreviewProvider {
     static var previews: some View {
-        Header(fontSize: 400)
+        MainHeader(fontSize: 400)
     }
 }
