@@ -17,6 +17,7 @@ struct ColorPickerView: View {
     @State private var alpha: Double = 0.5
     
     @ObservedObject var colorPickerManager = ColorPickerManager()
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
         GeometryReader { geo in
@@ -38,37 +39,9 @@ struct ColorPickerView: View {
                         .fontWeight(.bold)
                         .padding()
                     
-                    VStack(spacing: 0) {
-                        HStack {
-                            Text("R")
-                                .font(.title2)
-                                .fontWeight(.semibold)
-                            Slider(value: $red, in: 0...255)
-                                .tint(.red)
-                        }
-                        HStack {
-                            Text("G")
-                                .font(.title2)
-                                .fontWeight(.semibold)
-                            Slider(value: $green, in: 0...255)
-                                .tint(.green)
-                        }
-                        HStack {
-                            Text("B")
-                                .font(.title2)
-                                .fontWeight(.semibold)
-                            Slider(value: $blue, in: 0...255)
-                                .tint(.blue)
-                        }
-                        HStack {
-                            Text("A")
-                                .font(.title2)
-                                .fontWeight(.semibold)
-                            Slider(value: $alpha, in: 0...1)
-                                .tint(.gray)
-                        }
-                    }
-                    .padding()
+                    RGBSlider(
+                        red: $colorPickerManager.red, green: $colorPickerManager.green,
+                        blue: $colorPickerManager.blue, alpha: $colorPickerManager.alpha)
                     
                     VStack {
                         HStack {
@@ -195,7 +168,25 @@ struct ColorPickerView: View {
                 }
                 .padding()
             } else {
-                ColorPickerHeaderLandscape(geoWidth: geo.size.width)
+                VStack {
+                    HStack {
+                        ColorPickerHeaderLandscape(geoWidth: geo.size.width)
+                        Spacer()
+                        Button(action: { dismiss() }) {
+                            Image(systemName: "x.circle.fill")
+                                .foregroundColor(Color.white)
+                                .font(Font.title2)
+                        }
+                    }
+                    
+                    HStack {
+                        RGBSlider(
+                            red: $colorPickerManager.red, green: $colorPickerManager.green,
+                            blue: $colorPickerManager.blue, alpha: $colorPickerManager.alpha)
+                    }
+                    
+                }
+                .padding()
             }
         }
     }
