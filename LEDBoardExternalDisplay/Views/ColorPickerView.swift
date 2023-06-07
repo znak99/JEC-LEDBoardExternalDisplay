@@ -25,19 +25,10 @@ struct ColorPickerView: View {
                 VStack {
                     ColorPickerHeaderPortrait(geoWidth: geo.size.width)
                     
-                    Text("Sample text")
-                        .font(.largeTitle)
-                        .foregroundColor(
-                            Color.init(red: colorPickerManager.red / 255,
-                                       green: colorPickerManager.green / 255,
-                                       blue: colorPickerManager.blue / 255,
-                                       opacity: colorPickerManager.alpha))
-                        .shadow(color: .init(red: colorPickerManager.red / 255,
-                                             green: colorPickerManager.green / 255,
-                                             blue: colorPickerManager.blue / 255,
-                                             opacity: colorPickerManager.alpha), radius: 12)
-                        .fontWeight(.bold)
-                        .padding()
+                    FontColorPreview(red: $colorPickerManager.red,
+                                     green: $colorPickerManager.green,
+                                     blue: $colorPickerManager.blue,
+                                     alpha: $colorPickerManager.alpha)
                     
                     RGBSlider(
                         red: $colorPickerManager.red, green: $colorPickerManager.green,
@@ -179,12 +170,16 @@ struct ColorPickerView: View {
                         }
                     }
                     
+                    FontColorPreview(red: colorPickerManager.red,
+                                     green: colorPickerManager.green,
+                                     blue: colorPickerManager.blue,
+                                     alpha: colorPickerManager.alpha)
+                    
                     HStack {
                         RGBSlider(
                             red: $colorPickerManager.red, green: $colorPickerManager.green,
                             blue: $colorPickerManager.blue, alpha: $colorPickerManager.alpha)
                     }
-                    
                 }
                 .padding()
             }

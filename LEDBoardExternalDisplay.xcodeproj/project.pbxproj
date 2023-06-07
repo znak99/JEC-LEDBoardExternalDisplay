@@ -13,6 +13,7 @@
 		7F74BE062A302CB300C027F0 /* ColorPickerHeaderPortrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74BE052A302CB300C027F0 /* ColorPickerHeaderPortrait.swift */; };
 		7F74BE0A2A302E1000C027F0 /* ColorPickerHeaderLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74BE092A302E1000C027F0 /* ColorPickerHeaderLandscape.swift */; };
 		7F74BE0C2A30433C00C027F0 /* RGBSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74BE0B2A30433C00C027F0 /* RGBSlider.swift */; };
+		7F74BE0E2A3051A700C027F0 /* FontColorPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74BE0D2A3051A700C027F0 /* FontColorPreview.swift */; };
 		FBF869E52A2F7D05008CBDE3 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF869E42A2F7D05008CBDE3 /* ColorPickerView.swift */; };
 		FBFDAB3D2A2F985900DC8CA7 /* ColorPickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDAB3C2A2F985900DC8CA7 /* ColorPickerManager.swift */; };
 		FBFDD81C2A2E3634002697B6 /* LEDBoardExternalDisplayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD81B2A2E3634002697B6 /* LEDBoardExternalDisplayApp.swift */; };
@@ -42,6 +43,7 @@
 		7F74BE052A302CB300C027F0 /* ColorPickerHeaderPortrait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerHeaderPortrait.swift; sourceTree = "<group>"; };
 		7F74BE092A302E1000C027F0 /* ColorPickerHeaderLandscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerHeaderLandscape.swift; sourceTree = "<group>"; };
 		7F74BE0B2A30433C00C027F0 /* RGBSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBSlider.swift; sourceTree = "<group>"; };
+		7F74BE0D2A3051A700C027F0 /* FontColorPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FontColorPreview.swift; path = ColorPickerView/FontColorPreview.swift; sourceTree = "<group>"; };
 		FBF869E42A2F7D05008CBDE3 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		FBFDAB3C2A2F985900DC8CA7 /* ColorPickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerManager.swift; sourceTree = "<group>"; };
 		FBFDD8182A2E3634002697B6 /* LEDBoardExternalDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LEDBoardExternalDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,6 +182,7 @@
 				7F74BE072A302D6600C027F0 /* ColorPickerView */,
 				FBFDD83F2A2E4F4C002697B6 /* BlankFieldWarnning.swift */,
 				FBFDD8412A2E510A002697B6 /* ExternalDisplayStatusInfo.swift */,
+				7F74BE0D2A3051A700C027F0 /* FontColorPreview.swift */,
 				FBFDD8452A2E5449002697B6 /* MessageColorPicker.swift */,
 				FBFDD8472A2E5ACD002697B6 /* DisplayModeSelector.swift */,
 				FBFDD8492A2E6302002697B6 /* StartButton.swift */,
@@ -282,6 +285,7 @@
 				FBFDD8382A2E4329002697B6 /* GenerateMessageView.swift in Sources */,
 				FBFDD84E2A2E66AC002697B6 /* OptionsAndButtonPortrait.swift in Sources */,
 				FBFDD83A2A2E4675002697B6 /* ViewExtension.swift in Sources */,
+				7F74BE0E2A3051A700C027F0 /* FontColorPreview.swift in Sources */,
 				FBFDD81C2A2E3634002697B6 /* LEDBoardExternalDisplayApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
