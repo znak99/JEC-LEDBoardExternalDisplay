@@ -25,9 +25,11 @@ struct RecommendColorCircle: View {
             .frame(width: geoWidth / 12, height: geoWidth / 12)
             .shadow(color: Color.init(red: red / 255, green: green / 255, blue: blue / 255), radius: 8)
             .onTapGesture {
-                redValue = red
-                greenValue = green
-                blueValue = blue
+                withAnimation {
+                    redValue = red
+                    greenValue = green
+                    blueValue = blue
+                }
             }
     }
 }
