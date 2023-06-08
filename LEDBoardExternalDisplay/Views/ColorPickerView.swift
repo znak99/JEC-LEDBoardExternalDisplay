@@ -75,6 +75,11 @@ struct ColorPickerView: View {
                 .padding()
             }
         }
+        .onAppear {
+            withAnimation {
+                colorPickerManager.setCurrentColorOnSlider()
+            }
+        }
     }
 }
 

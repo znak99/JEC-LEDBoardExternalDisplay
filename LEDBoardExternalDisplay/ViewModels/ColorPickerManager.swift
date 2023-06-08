@@ -12,6 +12,6 @@ class ColorPickerManager: ObservableObject {
     @Published var selectedColor = FontColor()
     
     func setCurrentColorOnSlider() {
-        
+        // TODO: set current color
     }
 }
