@@ -30,34 +30,22 @@ struct ColorPickerView: View {
                                      blue: $colorPickerManager.blue,
                                      alpha: $colorPickerManager.alpha)
                     
-                    
                     RGBSlider(
                         red: $colorPickerManager.red, green: $colorPickerManager.green,
                         blue: $colorPickerManager.blue, alpha: $colorPickerManager.alpha)
                     
-                    RecommendColorsPortrait(
+                    RecommendColors(
                         geoSize: geo.size,
                         redValue: $colorPickerManager.red,
                         greenValue: $colorPickerManager.green,
                         blueValue: $colorPickerManager.blue)
                     
-                    Button(action: {}) {
-                        HStack {
-                            Spacer()
-                            Text("Select this color")
-                                .font(.title3)
-                                .fontWeight(.semibold)
-                                .foregroundColor(red + green + blue < 320 ? .white : alpha < 0.6 ? .white : .black)
-                                .minimumScaleFactor(0.5)
-                            Spacer()
-                        }
-                    }
-                    .padding()
-                    .background(Color.init(red: red / 255, green: green / 255, blue: blue / 255, opacity: alpha))
-                    .cornerRadius(8)
-                    .shadow(color: Color.init(red: red / 255, green: green / 255, blue: blue / 255, opacity: alpha), radius: 4)
-                    .padding()
-                    .padding(.top)
+                    SaveButtonPortrait(action: {
+                        
+                    }, red: $colorPickerManager.red,
+                       green: $colorPickerManager.green,
+                       blue: $colorPickerManager.blue,
+                       alpha: $colorPickerManager.alpha)
                 }
                 .padding()
             } else {
@@ -81,6 +69,13 @@ struct ColorPickerView: View {
                             red: $colorPickerManager.red, green: $colorPickerManager.green,
                             blue: $colorPickerManager.blue, alpha: $colorPickerManager.alpha)
                     }
+                    
+                    SaveButtonLandscape(action: {
+                        
+                    }, red: $colorPickerManager.red,
+                       green: $colorPickerManager.green,
+                       blue: $colorPickerManager.blue,
+                       alpha: $colorPickerManager.alpha)
                 }
                 .padding()
             }

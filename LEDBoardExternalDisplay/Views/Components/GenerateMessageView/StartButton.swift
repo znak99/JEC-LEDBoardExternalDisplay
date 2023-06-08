@@ -13,7 +13,7 @@ struct StartButton: View {
     @Binding var status: Bool
     
     var body: some View {
-        Button(action: {}) {
+        Button(action: action) {
             HStack {
                 Spacer()
                 Text(status ? DisplayConnectionStatus.connected.buttonText : DisplayConnectionStatus.disconnected.buttonText)

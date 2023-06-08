@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RecommendColorsPortrait: View {
+struct RecommendColors: View {
     
     @State var geoSize: CGSize
     
@@ -83,8 +83,8 @@ struct RecommendColorsPortrait: View {
     }
 }
 
-struct RecommendColorsPortrait_Previews: PreviewProvider {
+struct RecommendColors_Previews: PreviewProvider {
     static var previews: some View {
-        RecommendColorsPortrait(geoSize: CGSize.zero, redValue: .constant(0), greenValue: .constant(0), blueValue: .constant(0))
+        RecommendColors(geoSize: CGSize.zero, redValue: .constant(0), greenValue: .constant(0), blueValue: .constant(0))
     }
 }
