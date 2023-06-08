@@ -17,6 +17,7 @@
 		7F74BE102A30592500C027F0 /* RecommendColorCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74BE0F2A30592500C027F0 /* RecommendColorCircle.swift */; };
 		7F74BE122A3063D000C027F0 /* RecommendColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74BE112A3063D000C027F0 /* RecommendColors.swift */; };
 		7FD167372A31A37900BFBEF2 /* SaveButtonLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD167362A31A37900BFBEF2 /* SaveButtonLandscape.swift */; };
+		7FD167392A31A55100BFBEF2 /* FontColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD167382A31A55100BFBEF2 /* FontColor.swift */; };
 		FBF869E52A2F7D05008CBDE3 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF869E42A2F7D05008CBDE3 /* ColorPickerView.swift */; };
 		FBFDAB3D2A2F985900DC8CA7 /* ColorPickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDAB3C2A2F985900DC8CA7 /* ColorPickerManager.swift */; };
 		FBFDD81C2A2E3634002697B6 /* LEDBoardExternalDisplayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD81B2A2E3634002697B6 /* LEDBoardExternalDisplayApp.swift */; };
@@ -50,6 +51,7 @@
 		7F74BE0F2A30592500C027F0 /* RecommendColorCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendColorCircle.swift; sourceTree = "<group>"; };
 		7F74BE112A3063D000C027F0 /* RecommendColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendColors.swift; sourceTree = "<group>"; };
 		7FD167362A31A37900BFBEF2 /* SaveButtonLandscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveButtonLandscape.swift; sourceTree = "<group>"; };
+		7FD167382A31A55100BFBEF2 /* FontColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontColor.swift; sourceTree = "<group>"; };
 		FBF869E42A2F7D05008CBDE3 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		FBFDAB3C2A2F985900DC8CA7 /* ColorPickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerManager.swift; sourceTree = "<group>"; };
 		FBFDD8182A2E3634002697B6 /* LEDBoardExternalDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LEDBoardExternalDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +181,7 @@
 			children = (
 				FBFDD82F2A2E37E3002697B6 /* Message.swift */,
 				FBFDD8332A2E38D2002697B6 /* DisplayMode.swift */,
+				7FD167382A31A55100BFBEF2 /* FontColor.swift */,
 				FBFDD8432A2E5189002697B6 /* DisplayConnectionStatus.swift */,
 			);
 			path = Models;
@@ -287,6 +290,7 @@
 				FBFDD8422A2E510A002697B6 /* ExternalDisplayStatusInfo.swift in Sources */,
 				FBFDAB3D2A2F985900DC8CA7 /* ColorPickerManager.swift in Sources */,
 				FBFDD81E2A2E3634002697B6 /* ContentView.swift in Sources */,
+				7FD167392A31A55100BFBEF2 /* FontColor.swift in Sources */,
 				FBFDD84A2A2E6302002697B6 /* StartButton.swift in Sources */,
 				7F74BDFE2A3013BA00C027F0 /* ExternalDisplayContent.swift in Sources */,
 				FBFDD8402A2E4F4C002697B6 /* BlankFieldWarnning.swift in Sources */,
