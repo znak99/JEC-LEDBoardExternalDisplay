@@ -9,7 +9,6 @@ import SwiftUI
 
 struct OptionsAndButtonPortrait: View {
     
-    var action: () -> ()
     @Binding var status: Bool
     @State var color: Color
     @Binding var isShowColorPickerView: Bool
@@ -18,13 +17,30 @@ struct OptionsAndButtonPortrait: View {
         VStack {
             MessageColorPicker(color: color, isShowColorPickerView: $isShowColorPickerView)
             DisplayModeSelector()
-            StartButton(action: action, status: $status)
+            NavigationLink(destination: ExternalLEDBoardView()) {
+                HStack {
+                    Spacer()
+                    Text(status ? DisplayConnectionStatus.connected.buttonText : DisplayConnectionStatus.disconnected.buttonText)
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.black)
+                        .minimumScaleFactor(0.5)
+                    Spacer()
+                }
+            }
+            .padding()
+            .background(Color.yellow)
+            .cornerRadius(8)
+            .shadow(color: .yellow, radius: 8)
+            .padding()
+            .padding(.top)
+
         }
     }
 }
 
 struct OptionsAndButtonPortrait_Previews: PreviewProvider {
     static var previews: some View {
-        OptionsAndButtonPortrait(action: { print("Button") }, status: .constant(true), color: .red, isShowColorPickerView: .constant(false))
+        OptionsAndButtonPortrait(status: .constant(true), color: .red, isShowColorPickerView: .constant(false))
     }
 }

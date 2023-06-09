@@ -20,7 +20,23 @@ struct OptionsAndButtonLandscape: View {
                 MessageColorPicker(color: color, isShowColorPickerView: $isShowColorPickerView)
                 DisplayModeSelector()
             }
-            StartButton(action: action, status: $status)
+            Button(action: action) {
+                HStack {
+                    Spacer()
+                    Text(status ? DisplayConnectionStatus.connected.buttonText : DisplayConnectionStatus.disconnected.buttonText)
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.black)
+                        .minimumScaleFactor(0.5)
+                    Spacer()
+                }
+            }
+            .padding()
+            .background(Color.yellow)
+            .cornerRadius(8)
+            .shadow(color: .yellow, radius: 8)
+            .padding()
+            .padding(.top)
         }
     }
 }

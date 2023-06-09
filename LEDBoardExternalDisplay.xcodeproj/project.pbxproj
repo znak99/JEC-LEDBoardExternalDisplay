@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7F00A3E32A32C3D600731B02 /* GenerateMessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F00A3E22A32C3D600731B02 /* GenerateMessageManager.swift */; };
+		7F00A3E52A32CEBA00731B02 /* InternalLEDBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F00A3E42A32CEBA00731B02 /* InternalLEDBoardView.swift */; };
 		7F23ABB82A319F270055A20C /* SaveButtonPortrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23ABB72A319F270055A20C /* SaveButtonPortrait.swift */; };
 		7F74BDFC2A30131600C027F0 /* ExternalLEDBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74BDFB2A30131600C027F0 /* ExternalLEDBoardView.swift */; };
 		7F74BE062A302CB300C027F0 /* ColorPickerHeaderPortrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74BE052A302CB300C027F0 /* ColorPickerHeaderPortrait.swift */; };
@@ -35,13 +36,13 @@
 		FBFDD8442A2E5189002697B6 /* DisplayConnectionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8432A2E5189002697B6 /* DisplayConnectionStatus.swift */; };
 		FBFDD8462A2E5449002697B6 /* MessageColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8452A2E5449002697B6 /* MessageColorPicker.swift */; };
 		FBFDD8482A2E5ACD002697B6 /* DisplayModeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8472A2E5ACD002697B6 /* DisplayModeSelector.swift */; };
-		FBFDD84A2A2E6302002697B6 /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD8492A2E6302002697B6 /* StartButton.swift */; };
 		FBFDD84C2A2E655F002697B6 /* OptionsAndButtonLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD84B2A2E655F002697B6 /* OptionsAndButtonLandscape.swift */; };
 		FBFDD84E2A2E66AC002697B6 /* OptionsAndButtonPortrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFDD84D2A2E66AC002697B6 /* OptionsAndButtonPortrait.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F00A3E22A32C3D600731B02 /* GenerateMessageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateMessageManager.swift; sourceTree = "<group>"; };
+		7F00A3E42A32CEBA00731B02 /* InternalLEDBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalLEDBoardView.swift; sourceTree = "<group>"; };
 		7F23ABB72A319F270055A20C /* SaveButtonPortrait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveButtonPortrait.swift; sourceTree = "<group>"; };
 		7F74BDFB2A30131600C027F0 /* ExternalLEDBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalLEDBoardView.swift; sourceTree = "<group>"; };
 		7F74BE052A302CB300C027F0 /* ColorPickerHeaderPortrait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerHeaderPortrait.swift; sourceTree = "<group>"; };
@@ -70,7 +71,6 @@
 		FBFDD8432A2E5189002697B6 /* DisplayConnectionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayConnectionStatus.swift; sourceTree = "<group>"; };
 		FBFDD8452A2E5449002697B6 /* MessageColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageColorPicker.swift; sourceTree = "<group>"; };
 		FBFDD8472A2E5ACD002697B6 /* DisplayModeSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayModeSelector.swift; sourceTree = "<group>"; };
-		FBFDD8492A2E6302002697B6 /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
 		FBFDD84B2A2E655F002697B6 /* OptionsAndButtonLandscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsAndButtonLandscape.swift; sourceTree = "<group>"; };
 		FBFDD84D2A2E66AC002697B6 /* OptionsAndButtonPortrait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsAndButtonPortrait.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,7 +110,6 @@
 				7F74BE0D2A3051A700C027F0 /* FontColorPreview.swift */,
 				FBFDD8452A2E5449002697B6 /* MessageColorPicker.swift */,
 				FBFDD8472A2E5ACD002697B6 /* DisplayModeSelector.swift */,
-				FBFDD8492A2E6302002697B6 /* StartButton.swift */,
 				FBFDD84B2A2E655F002697B6 /* OptionsAndButtonLandscape.swift */,
 				FBFDD84D2A2E66AC002697B6 /* OptionsAndButtonPortrait.swift */,
 			);
@@ -170,6 +169,7 @@
 			children = (
 				FBFDD8372A2E4329002697B6 /* GenerateMessageView.swift */,
 				FBF869E42A2F7D05008CBDE3 /* ColorPickerView.swift */,
+				7F00A3E42A32CEBA00731B02 /* InternalLEDBoardView.swift */,
 				7F74BDFB2A30131600C027F0 /* ExternalLEDBoardView.swift */,
 				FBFDD82D2A2E36DF002697B6 /* Components */,
 			);
@@ -292,7 +292,7 @@
 				FBFDAB3D2A2F985900DC8CA7 /* ColorPickerManager.swift in Sources */,
 				FBFDD81E2A2E3634002697B6 /* ContentView.swift in Sources */,
 				7FD167392A31A55100BFBEF2 /* FontColor.swift in Sources */,
-				FBFDD84A2A2E6302002697B6 /* StartButton.swift in Sources */,
+				7F00A3E52A32CEBA00731B02 /* InternalLEDBoardView.swift in Sources */,
 				FBFDD8402A2E4F4C002697B6 /* BlankFieldWarnning.swift in Sources */,
 				FBFDD8342A2E38D2002697B6 /* DisplayMode.swift in Sources */,
 				FBFDD8462A2E5449002697B6 /* MessageColorPicker.swift in Sources */,
