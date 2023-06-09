@@ -9,12 +9,7 @@ import SwiftUI
 
 struct GenerateMessageView: View {
     
-    // FIXME: - Temporary variables
-    @State private var message: String = ""
-    @State private var messageFieldWarnning = true
-    @State private var displayConnectionStatus = true
-    @State private var showColorPickerView = false
-
+    @EnvironmentObject var messageManager: GenerateMessageManager
     
     var body: some View {
         NavigationView {
@@ -25,27 +20,31 @@ struct GenerateMessageView: View {
                     MainHeader(fontSize: geo.size.width < geo.size.height
                            ? geo.size.width : geo.size.height)
                     
-                    MessageField(message: $message)
+                    MessageField(message: $messageManager.message.text)
                     
-                    if messageFieldWarnning {
+                    if messageManager.isShowBlankFieldWarnning {
                         BlankFieldWarnning()
                     }
                     
-                    ExternalDisplayStatusInfo(status: $displayConnectionStatus)
+                    ExternalDisplayStatusInfo(status: $messageManager.isExternalDisplayConnected)
                     
                     if geo.size.width < geo.size.height { // Portrait
                         OptionsAndButtonPortrait(action: {
                             
-                        }, status: $displayConnectionStatus, color: .red, isShowColorPickerView: $showColorPickerView)
+                        }, status: $messageManager.isExternalDisplayConnected,
+                                                 color: messageManager.message.fontColor,
+                                                 isShowColorPickerView: $messageManager.isShowColorPicker)
                     } else { // Landscape
                         OptionsAndButtonLandscape(action: {
                             
-                        }, status: $displayConnectionStatus, color: .red, isShowColorPickerView: $showColorPickerView)
+                        }, status: $messageManager.isExternalDisplayConnected,
+                                                  color: messageManager.message.fontColor,
+                                                  isShowColorPickerView: $messageManager.isShowColorPicker)
                     }
                 }
                 .padding(.horizontal)
-                .sheet(isPresented: $showColorPickerView) {
-                    ColorPickerView()
+                .sheet(isPresented: $messageManager.isShowColorPicker) {
+                    ColorPickerView(messageManager: messageManager)
                 }
             }
             .toolbar(.hidden)

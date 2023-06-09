@@ -12,6 +12,8 @@ struct ColorPickerView: View {
     @State var color: Color = .white
     
     @ObservedObject var colorPickerManager = ColorPickerManager()
+    @ObservedObject var messageManager: GenerateMessageManager
+    
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
@@ -85,6 +87,6 @@ struct ColorPickerView: View {
 
 struct ColorPickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ColorPickerView()
+        ColorPickerView(messageManager: GenerateMessageManager())
     }
 }

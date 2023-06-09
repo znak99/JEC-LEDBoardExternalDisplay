@@ -12,7 +12,7 @@ import Combine
 struct LEDBoardExternalDisplayApp: App {
     
     @State var additionalWindows: [UIWindow] = []
-    @StateObject var externalDisplayContent: ExternalDisplayContent = .init()
+    @StateObject var messageManager: GenerateMessageManager = .init()
     
     // external display connected notification publisher
     private var sceneWillConnectPublisher: AnyPublisher<UIWindowScene, Never> {
@@ -33,7 +33,7 @@ struct LEDBoardExternalDisplayApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(externalDisplayContent)
+                .environmentObject(messageManager)
                 .onReceive(sceneWillConnectPublisher, perform: sceneWillConnect)
                 .onReceive(sceneDidDisconnectPublisher, perform: sceneDidDisConnect)
         }
@@ -44,21 +44,19 @@ struct LEDBoardExternalDisplayApp: App {
         window.windowScene = scene
         
         let view = ExternalLEDBoardView()
-            .environmentObject(externalDisplayContent)
-        // TODO: - add viewmodels
-//            .environmentObject(messageSettingsManager)
+            .environmentObject(messageManager)
         let controller = UIHostingController(rootView: view)
         
         window.rootViewController = controller
         window.isHidden = false
         
         additionalWindows.append(window)
-        externalDisplayContent.isExternalDisplayConnected = true
+        messageManager.isExternalDisplayConnected = true
     }
     
     private func sceneDidDisConnect(_ scene: UIWindowScene) {
         additionalWindows.removeAll{ $0.windowScene == scene }
-        externalDisplayContent.isExternalDisplayConnected = false
+        messageManager.isExternalDisplayConnected = false
     }
 }
 
