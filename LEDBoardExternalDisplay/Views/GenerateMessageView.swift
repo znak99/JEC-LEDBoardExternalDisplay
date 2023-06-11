@@ -10,6 +10,7 @@ import SwiftUI
 struct GenerateMessageView: View {
     
     @EnvironmentObject var messageManager: GenerateMessageManager
+    @EnvironmentObject var displayManager: DisplayManager
     
     var body: some View {
         GeometryReader { geo in
@@ -37,7 +38,9 @@ struct GenerateMessageView: View {
                             Spacer()
                             
                             StartButton(action: {
-                                messageManager.displayMessage()
+                                withAnimation {
+                                    messageManager.displayMessage(displayManager: displayManager)
+                                }
                             }, status: $messageManager.isExternalDisplayConnected)
                         }
                     } else {
@@ -52,7 +55,9 @@ struct GenerateMessageView: View {
                     VStack {
                         Spacer()
                         StartButton(action: {
-                            messageManager.displayMessage()
+                            withAnimation {
+                                messageManager.displayMessage(displayManager: displayManager)
+                            }
                         }, status: $messageManager.isExternalDisplayConnected)
                         .padding(.bottom)
                     }
@@ -60,7 +65,12 @@ struct GenerateMessageView: View {
                 
             }
             .padding(.horizontal)
-            .sheet(isPresented: $messageManager.isShowColorPicker) {
+            .fullScreenCover(isPresented: $messageManager.isLEDBoardStart) {
+                InternalLEDBoardView()
+            }
+            .sheet(isPresented: $messageManager.isShowColorPicker, onDismiss: {
+                messageManager.isShowColorPicker = false
+            }) {
                 ColorPickerView(messageManager: messageManager)
             }
         }

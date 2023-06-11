@@ -29,5 +29,7 @@ class ColorPickerManager: ObservableObject {
                                                green: selectedColor.green,
                                                blue: selectedColor.blue,
                                                opacity: selectedColor.alpha)
+        
+        message.isShowColorPicker = false
     }
 }

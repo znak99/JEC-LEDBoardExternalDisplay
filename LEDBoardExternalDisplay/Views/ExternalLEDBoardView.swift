@@ -6,10 +6,41 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ExternalLEDBoardView: View {
+    
+    @EnvironmentObject var displayManager: DisplayManager
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader { geo in
+            VStack {
+                Spacer()
+                Text(displayManager.message.text)
+                    .font(.system(size: geo.size.width / 2))
+                    .fixedSize(horizontal: true, vertical: true)
+                    .offset(x: displayManager.offsetX)
+                    .foregroundColor(displayManager.displayMessage ? displayManager.message.fontColor : .black)
+                    .shadow(color: displayManager.displayMessage ? displayManager.message.fontColor : .black, radius: 12)
+                    .onAppear {
+                        displayManager.offsetX = geo.size.width
+                    }
+                    .onChange(of: displayManager.displayMessage, perform: { isDisplay in
+                        if isDisplay {
+                            withAnimation(.linear(duration: Double(displayManager.message.text.count) + 2 )) {
+                                displayManager.offsetX -= geo.size.width + (geo.size.width / 2)
+                            }
+                            DispatchQueue.main.asyncAfter(deadline: .now() + Double(displayManager.message.text.count) + 2) {
+                                displayManager.displayMessage = false
+                                displayManager.offsetX = geo.size.width
+                            }
+                        }
+                        
+                    })
+                Spacer()
+            }
+        }
+        .ignoresSafeArea()
     }
 }
 

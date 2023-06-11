@@ -15,6 +15,7 @@ struct BlankFieldWarnning: View {
                 .font(.footnote)
             Spacer()
         }
+        .padding(.vertical)
     }
 }
 

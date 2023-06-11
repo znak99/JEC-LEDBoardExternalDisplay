@@ -13,6 +13,7 @@ struct LEDBoardExternalDisplayApp: App {
     
     @State var additionalWindows: [UIWindow] = []
     @StateObject var messageManager: GenerateMessageManager = .init()
+    @StateObject var displayManager: DisplayManager = .init()
     
     // external display connected notification publisher
     private var sceneWillConnectPublisher: AnyPublisher<UIWindowScene, Never> {
@@ -34,6 +35,7 @@ struct LEDBoardExternalDisplayApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(messageManager)
+                .environmentObject(displayManager)
                 .onReceive(sceneWillConnectPublisher, perform: sceneWillConnect)
                 .onReceive(sceneDidDisconnectPublisher, perform: sceneDidDisConnect)
         }
@@ -45,6 +47,7 @@ struct LEDBoardExternalDisplayApp: App {
         
         let view = ExternalLEDBoardView()
             .environmentObject(messageManager)
+            .environmentObject(displayManager)
         let controller = UIHostingController(rootView: view)
         
         window.rootViewController = controller
