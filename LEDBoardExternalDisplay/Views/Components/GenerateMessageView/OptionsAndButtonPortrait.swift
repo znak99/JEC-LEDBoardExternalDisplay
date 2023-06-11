@@ -10,13 +10,12 @@ import SwiftUI
 struct OptionsAndButtonPortrait: View {
     
     @Binding var status: Bool
-    @State var color: Color
+    @Binding var color: Color
     @Binding var isShowColorPickerView: Bool
     
     var body: some View {
         VStack {
-            MessageColorPicker(color: color, isShowColorPickerView: $isShowColorPickerView)
-            DisplayModeSelector()
+            MessageColorPicker(color: $color, isShowColorPickerView: $isShowColorPickerView)
             NavigationLink(destination: ExternalLEDBoardView()) {
                 HStack {
                     Spacer()
@@ -41,6 +40,6 @@ struct OptionsAndButtonPortrait: View {
 
 struct OptionsAndButtonPortrait_Previews: PreviewProvider {
     static var previews: some View {
-        OptionsAndButtonPortrait(status: .constant(true), color: .red, isShowColorPickerView: .constant(false))
+        OptionsAndButtonPortrait(status: .constant(true), color: .constant(.red), isShowColorPickerView: .constant(false))
     }
 }

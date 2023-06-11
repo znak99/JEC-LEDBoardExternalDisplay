@@ -38,7 +38,8 @@ struct ColorPickerView: View {
                         blueValue: $colorPickerManager.selectedColor.blue)
                     
                     SaveButtonPortrait(action: {
-                        
+                        colorPickerManager.setSelectedColorToFontColor(messageManager: messageManager)
+                        dismiss()
                     }, red: $colorPickerManager.selectedColor.red,
                        green: $colorPickerManager.selectedColor.green,
                        blue: $colorPickerManager.selectedColor.blue,
@@ -79,7 +80,7 @@ struct ColorPickerView: View {
         }
         .onAppear {
             withAnimation {
-                colorPickerManager.setCurrentColorOnSlider()
+                colorPickerManager.setCurrentColorOnSlider(messageManager: messageManager)
             }
         }
     }

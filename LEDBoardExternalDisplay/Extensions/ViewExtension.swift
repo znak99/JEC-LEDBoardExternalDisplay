@@ -19,7 +19,7 @@ extension View {
     func MessageOptionsStyle() -> some View {
         self
             .padding(.horizontal)
-            .font(.headline)
+            .font(.title3)
             .foregroundColor(.white)
             .padding([.top, .horizontal])
     }

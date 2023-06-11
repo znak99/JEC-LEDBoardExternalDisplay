@@ -11,5 +11,4 @@ import SwiftUI
 struct Message {
     var text: String = ""
     var fontColor: Color = .white
-    var renderingMode: DisplayMode = .none
 }

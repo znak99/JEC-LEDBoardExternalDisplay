@@ -12,4 +12,11 @@ class GenerateMessageManager: ObservableObject {
     @Published var isShowBlankFieldWarnning = false
     @Published var isExternalDisplayConnected = false
     @Published var isShowColorPicker = false
+    
+    func displayMessage() {
+        if message.text.isEmpty {
+            isShowBlankFieldWarnning = true
+            return
+        }
+    }
 }

@@ -12,8 +12,8 @@ struct GenerateMessageView: View {
     @EnvironmentObject var messageManager: GenerateMessageManager
     
     var body: some View {
-        NavigationView {
-            GeometryReader { geo in
+        GeometryReader { geo in
+            ZStack {
                 VStack {
 
                     // Use the shorter side of the screen for font size
@@ -28,26 +28,41 @@ struct GenerateMessageView: View {
                     
                     ExternalDisplayStatusInfo(status: $messageManager.isExternalDisplayConnected)
                     
-                    if geo.size.width < geo.size.height { // Portrait
-                        OptionsAndButtonPortrait(action: {
+                    if geo.size.width >= geo.size.height { // Landscape
+                        HStack {
+                            MessageColorPicker(
+                                color: $messageManager.message.fontColor,
+                                isShowColorPickerView: $messageManager.isShowColorPicker)
                             
-                        }, status: $messageManager.isExternalDisplayConnected,
-                                                 color: messageManager.message.fontColor,
-                                                 isShowColorPickerView: $messageManager.isShowColorPicker)
-                    } else { // Landscape
-                        OptionsAndButtonLandscape(action: {
+                            Spacer()
                             
-                        }, status: $messageManager.isExternalDisplayConnected,
-                                                  color: messageManager.message.fontColor,
-                                                  isShowColorPickerView: $messageManager.isShowColorPicker)
+                            StartButton(action: {
+                                messageManager.displayMessage()
+                            }, status: $messageManager.isExternalDisplayConnected)
+                        }
+                    } else {
+                        MessageColorPicker(
+                            color: $messageManager.message.fontColor,
+                            isShowColorPickerView: $messageManager.isShowColorPicker)
+                        Spacer()
                     }
                 }
-                .padding(.horizontal)
-                .sheet(isPresented: $messageManager.isShowColorPicker) {
-                    ColorPickerView(messageManager: messageManager)
+                
+                if geo.size.width < geo.size.height { // Portrait
+                    VStack {
+                        Spacer()
+                        StartButton(action: {
+                            messageManager.displayMessage()
+                        }, status: $messageManager.isExternalDisplayConnected)
+                        .padding(.bottom)
+                    }
                 }
+                
             }
-            .toolbar(.hidden)
+            .padding(.horizontal)
+            .sheet(isPresented: $messageManager.isShowColorPicker) {
+                ColorPickerView(messageManager: messageManager)
+            }
         }
     }
 }

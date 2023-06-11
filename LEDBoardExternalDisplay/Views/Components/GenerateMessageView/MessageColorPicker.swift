@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MessageColorPicker: View {
     
-    @State var color: Color
+    @Binding var color: Color
     @Binding var isShowColorPickerView: Bool
     
     var body: some View {
@@ -23,6 +23,6 @@ struct MessageColorPicker: View {
 
 struct MessageColorPicker_Previews: PreviewProvider {
     static var previews: some View {
-        MessageColorPicker(color: .red, isShowColorPickerView: .constant(false))
+        MessageColorPicker(color: .constant(.red), isShowColorPickerView: .constant(false))
     }
 }

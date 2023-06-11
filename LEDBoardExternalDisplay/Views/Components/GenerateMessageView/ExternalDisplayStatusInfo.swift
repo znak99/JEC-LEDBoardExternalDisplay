@@ -11,7 +11,6 @@ struct ExternalDisplayStatusInfo: View {
     
     @Binding var status: Bool
     
-    
     var body: some View {
         HStack {
             Spacer()
