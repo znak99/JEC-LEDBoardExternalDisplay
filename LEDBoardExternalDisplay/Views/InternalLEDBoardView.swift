@@ -9,8 +9,26 @@ import SwiftUI
 
 struct InternalLEDBoardView: View {
     var body: some View {
-        VStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader { geo in
+            VStack {
+                if geo.size.width > geo.size.height {
+                    
+                } else {
+                    Spacer()
+                    HStack {
+                        Spacer()
+                        Text("LEDBoard only works in landscape mode")
+                            .foregroundColor(.white)
+                            .font(.subheadline)
+                        Spacer()
+                    }
+                    Spacer()
+                }
+                    
+            }
+            .onAppear {
+                
+            }
         }
     }
 }

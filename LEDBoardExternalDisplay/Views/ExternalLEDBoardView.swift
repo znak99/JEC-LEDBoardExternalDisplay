@@ -28,7 +28,7 @@ struct ExternalLEDBoardView: View {
                     .onChange(of: displayManager.isDisplayingMessage, perform: { isDisplay in
                         if isDisplay {
                             withAnimation(.linear(duration: Double(displayManager.message.text.count) + 2 )) {
-                                displayManager.offsetX -= geo.size.width + (geo.size.width / 2)
+                                displayManager.offsetX -= CGFloat(geo.size.width * CGFloat(displayManager.message.text.count))
                             }
                             DispatchQueue.main.asyncAfter(deadline: .now() + Double(displayManager.message.text.count) + 2) {
                                 displayManager.isDisplayingMessage = false
