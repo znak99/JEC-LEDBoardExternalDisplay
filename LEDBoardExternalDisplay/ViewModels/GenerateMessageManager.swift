@@ -22,9 +22,14 @@ class GenerateMessageManager: ObservableObject {
         isShowBlankFieldWarnning = false
         
         if isExternalDisplayConnected { // External Display
+            if displayManager.isDisplayingMessage {
+                displayManager.isShowUnavailableWarnning = true
+                return
+            }
+            displayManager.isShowUnavailableWarnning = false
             displayManager.message.text = message.text
             displayManager.message.fontColor = message.fontColor
-            displayManager.displayMessage = true
+            displayManager.isDisplayingMessage = true
             message.text = ""
         } else { // Internal Display
             isLEDBoardStart.toggle()

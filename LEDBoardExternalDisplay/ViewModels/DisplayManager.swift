@@ -11,5 +11,6 @@ import Combine
 class DisplayManager: ObservableObject {
     @Published var message = Message()
     @Published var offsetX: Double = 0.0
-    @Published var displayMessage = false
+    @Published var isDisplayingMessage = false
+    @Published var isShowUnavailableWarnning = false
 }

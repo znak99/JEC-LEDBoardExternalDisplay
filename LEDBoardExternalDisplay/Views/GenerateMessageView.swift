@@ -27,6 +27,10 @@ struct GenerateMessageView: View {
                         BlankFieldWarnning()
                     }
                     
+                    if displayManager.isShowUnavailableWarnning {
+                        AlreadyDisplayingWarnning()
+                    }
+                    
                     ExternalDisplayStatusInfo(status: $messageManager.isExternalDisplayConnected)
                     
                     if geo.size.width >= geo.size.height { // Landscape

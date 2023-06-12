@@ -36,8 +36,8 @@ struct LEDBoardExternalDisplayApp: App {
             ContentView()
                 .environmentObject(messageManager)
                 .environmentObject(displayManager)
-                .onReceive(sceneWillConnectPublisher, perform: sceneWillConnect)
                 .onReceive(sceneDidDisconnectPublisher, perform: sceneDidDisConnect)
+                .onReceive(sceneWillConnectPublisher, perform: sceneWillConnect)
         }
     }
     
