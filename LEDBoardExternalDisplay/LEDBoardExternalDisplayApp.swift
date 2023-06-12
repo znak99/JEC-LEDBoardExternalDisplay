@@ -18,7 +18,20 @@ struct LEDBoardExternalDisplayApp: App {
     // external display connected notification publisher
     private var sceneWillConnectPublisher: AnyPublisher<UIWindowScene, Never> {
         NotificationCenter.default.publisher(for: UIScene.willConnectNotification)
-            .compactMap { $0.object as? UIWindowScene }
+            .compactMap { notification in
+                guard let scene = notification.object as? UIWindowScene else {
+                    return nil
+                }
+                
+                // check current phone display
+                let isPhoneDisplay = UIScreen.main.traitCollection.userInterfaceIdiom == .phone
+                let isCurrentPhoneDisplay = scene.screen == UIScreen.main && isPhoneDisplay
+                if isCurrentPhoneDisplay {
+                    return nil
+                }
+                
+                return scene
+            }
             .receive(on: RunLoop.main)
             .eraseToAnyPublisher()
     }
@@ -55,6 +68,9 @@ struct LEDBoardExternalDisplayApp: App {
         
         additionalWindows.append(window)
         messageManager.isExternalDisplayConnected = true
+        
+        print("-------")
+        print(additionalWindows)
     }
     
     private func sceneDidDisConnect(_ scene: UIWindowScene) {
