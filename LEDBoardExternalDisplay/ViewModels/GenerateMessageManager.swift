@@ -28,11 +28,12 @@ class GenerateMessageManager: ObservableObject {
             }
             displayManager.isShowUnavailableWarnning = false
             displayManager.isDisplayingMessage = true
-            message.text = ""
         } else { // Internal Display
             isLEDBoardStart.toggle()
         }
         displayManager.message.text = message.text
         displayManager.message.fontColor = message.fontColor
+        print("displayManager.message.text: \(displayManager.message.text)")
+        print("message.text: \(message.text)")
     }
 }
