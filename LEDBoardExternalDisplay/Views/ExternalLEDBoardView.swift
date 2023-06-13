@@ -16,6 +16,7 @@ struct ExternalLEDBoardView: View {
         GeometryReader { geo in
             Text(displayManager.message.text)
                 .font(.system(size: geo.size.width / 2))
+                .fontWeight(.black)
                 .fixedSize(horizontal: true, vertical: true)
                 .offset(x: displayManager.offsetX)
                 .foregroundColor(displayManager.isDisplayingMessage ? displayManager.message.fontColor : .black)

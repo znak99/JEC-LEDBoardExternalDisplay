@@ -17,6 +17,8 @@ struct InternalLEDBoardView: View {
             VStack {
                 if geo.size.width > geo.size.height {
                     Text(displayManager.message.text)
+                        .foregroundColor(displayManager.message.fontColor)
+                        .fontWeight(.black)
                         .font(.system(size: geo.size.width / 2.3))
                         .offset(x: displayManager.offsetX)
                         .fixedSize(horizontal: true, vertical: true)

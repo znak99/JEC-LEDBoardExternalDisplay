@@ -69,7 +69,8 @@ struct ColorPickerView: View {
                     }
                     
                     SaveButtonLandscape(action: {
-                        
+                        colorPickerManager.setSelectedColorToFontColor(messageManager: messageManager)
+                        dismiss()
                     }, red: $colorPickerManager.selectedColor.red,
                        green: $colorPickerManager.selectedColor.green,
                        blue: $colorPickerManager.selectedColor.blue,
